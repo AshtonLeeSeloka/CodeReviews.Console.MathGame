@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace MathGameConsole
 {
 	internal class Calculator
 	{
 		Random random = new Random();
-		int numberOne = 0;
-		int numberTwo = 0;
-		double scoreAsInt = 0;
+		int numberOne;
+		int numberTwo;
+		double scoreAsInt;
 
 		/// <summary>
 		/// Generates Two Random Numbers and performes an addition operation then compares them to user Input
@@ -121,7 +118,7 @@ namespace MathGameConsole
 		/// Generates Two Random Numbers and performes an divison operation then compares them to user Input
 		/// </summary>
 		/// <returns>USer Score</returns>
-		public double division()
+		public double Division()
 		{
 			Console.Clear();
 
@@ -130,7 +127,7 @@ namespace MathGameConsole
 				numberOne = random.Next(0, 100);
 				numberTwo = random.Next(0, 100);
 
-				while (numberOne%numberTwo !=0) 
+				while (numberOne%numberTwo !=0 || numberOne == 0) 
 				{
 					numberOne = random.Next(0, 100);
 				}

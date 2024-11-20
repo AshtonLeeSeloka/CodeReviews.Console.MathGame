@@ -42,7 +42,7 @@ while (true)
 			break;
 
 		case 3:
-			score=calculator.division();
+			score=calculator.Division();
 			date = date ?? DateTime.Now;
 			History.Add($"User: {playerName}, Score: {score}/5, Date:{date}");
 			break;
