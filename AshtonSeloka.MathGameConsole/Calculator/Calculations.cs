@@ -14,6 +14,7 @@ namespace Calculator
 		Random random = new Random();
 		string operationSymbol;
 		public static int gameTimer;
+		bool complete;
 	
 		/// <summary>
 		/// A methode to control game play
@@ -96,6 +97,7 @@ namespace Calculator
 			Console.WriteLine($"\n press any key and enter to return");
 			if (Console.ReadLine() == null)
 			{
+				complete = false;
 
 			}
 			return score;
